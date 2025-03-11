@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <form name="formName" onsubmit="return validateform()">
+    <div>
+        <h1>form</h1>
+    </div>
+    <div>
+            <div>
+                <label for="nameId">name </label>
+                <span>*</span>
+                <span>:</span>
+                <input type="text" id="nameId" name="nameName" required> 
+            </div>
+        
+    </div>
+    <br>
+    <div>
+        <label for="emailid">email</label>
+        <span class="redcolour">*</span>
+        <span>;</span>
+        <input type="email " id="emailid" name="emailName" required>
+    </div>
+    <br>
+    <div>
+        <label>phone_number</label>
+        <span>*</span>
+        <span>:</span>
+        <input type="number" id="phone_number" name="phone_number" >
+    </div>
+    <br>
+    <div>
+        <label for="option1">gender</label>
+        <span>*</span>
+        <span>:</span>
+        <label>
+            <input type="radio" id="option1" name="gender" value="male" >male
+        </label>
+        <label>
+            <input type="radio" id="option2" name="gender" value="female">female
+        </label>
+        <label>
+            <input type="radio" id="option3" name="gender" value="other">other
+        </label>
+        
+    </div>
+    <br>
+    <div>
+        <label for="DOB">DOB</label>
+        <label>*</label>
+        <label>:</label>
+        <input type="date" id="DOB" name="DOB">
+    </div>
+    <br>
+    <div>
+        <label for="pasword">pasword :</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <label for="conform_pasword">conform_pasword :</label>
+        <input type="password" id="conform_pasword" name="conform_pasword"> 
+    </div>
+    <br>
+    <div>
+        <button type="submit" value="submit" >submit</button>
+        <button type="reset" value="clear" onclick="resetForm()"> clear</button>
+    </div>
+    
+</form>
+</body>
+</html>
